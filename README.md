@@ -3,7 +3,7 @@ cpp-peglib
 
 [![](https://github.com/yhirose/cpp-peglib/workflows/CMake/badge.svg)](https://github.com/yhirose/cpp-peglib/actions)
 
-C++17 header-only [PEG](http://en.wikipedia.org/wiki/Parsing_expression_grammar) (Parsing Expression Grammars) library. You can start using it right away just by including `peglib.h` in your project.
+C++17 header-only [PEG](http://en.wikipedia.org/wiki/Parsing_expression_grammar) (Parsing Expression Grammars) library, by [Yuji Hirose](https://github.com/yhirose). You can start using it right away just by including `peglib.h` in your project.
 
 Since this library only supports C++17 compilers, please make sure that the compiler option `-std=c++17` is enabled.
 (`/std:c++17 /Zc:__cplusplus` for MSVC)
@@ -42,6 +42,19 @@ This library supports the linear-time parsing known as the [*Packrat*](http://pd
 IMPORTANT NOTE for some Linux distributions such as Ubuntu and CentOS: Need `-pthread` option when linking. See [#23](https://github.com/yhirose/cpp-peglib/issues/23#issuecomment-261126127), [#46](https://github.com/yhirose/cpp-peglib/issues/46#issuecomment-417870473) and [#62](https://github.com/yhirose/cpp-peglib/issues/62#issuecomment-492032680).
 
 I am sure that you will enjoy this excellent ["Practical parsing with PEG and cpp-peglib"](https://berthub.eu/articles/posts/practical-peg-parsing/) article by [bert hubert](https://berthub.eu/)!
+
+Installation
+------------
+
+Run:
+```bash
+$ npm i cpp-peglib.cxx
+```
+
+And then include `peglib.h` as follows:
+```cxx
+#include "node_modules/cpp-peglib.cxx/peglib.h"
+```
 
 How to use
 ----------
@@ -799,3 +812,10 @@ License
 -------
 
 MIT license (© 2022 Yuji Hirose)
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/cpp-peglib.cxx)

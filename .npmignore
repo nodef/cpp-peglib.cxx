@@ -1,0 +1,8 @@
+.github/
+docs/
+example/
+lint/
+pl0/
+test/
+.clang-format
+.pre-commit-config.yaml
