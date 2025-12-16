@@ -1,0 +1,24 @@
+{
+  "name": "cpp-peglib.cxx",
+  "version": "1.2025.7",
+  "description": "A single file C++ header-only PEG (Parsing Expression Grammars) library; yhirose (2015).",
+  "keywords": [
+    "c",
+    "library",
+    "parser",
+    "peg",
+    "peglib",
+    "parsing expression grammar",
+    "header-only"
+  ],
+  "homepage": "https://github.com/nodef/cpp-peglib.cxx#readme",
+  "bugs": {
+    "url": "https://github.com/nodef/cpp-peglib.cxx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/cpp-peglib.cxx.git"
+  },
+  "license": "MIT",
+  "main": "cpp-peglib.h"
+}
