@@ -47,13 +47,32 @@ Installation
 ------------
 
 Run:
+
 ```bash
-$ npm i cpp-peglib.cxx
+$ npm i peglib.cxx
 ```
 
 And then include `peglib.h` as follows:
+
 ```cxx
-#include "node_modules/cpp-peglib.cxx/peglib.h"
+// main.cxx
+#include <peglib.h>
+
+int main() { /* ... */ }
+```
+
+Finally, compile while adding the path `node_modules/peglib.cxx` to your compiler's include paths.
+
+```bash
+$ clang++ -I./node_modules/peglib.cxx main.cxx  # or, use g++
+$ g++     -I./node_modules/peglib.cxx main.cxx
+```
+
+You may also use a simpler approach with the [cpoach](https://www.npmjs.com/package/cpoach.sh) tool, which automatically adds the necessary include paths of all the installed dependencies for your project.
+
+```bash
+$ cpoach clang++ main.cxx  # or, use g++
+$ cpoach g++     main.cxx
 ```
 
 How to use
@@ -817,6 +836,7 @@ MIT license (© 2022 Yuji Hirose)
 <br>
 
 
+[![](https://raw.githubusercontent.com/qb40/designs/gh-pages/0/image/11.png)](https://wolfram77.github.io)<br>
 [![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/yhirose/cpp-peglib)
 [![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
 ![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/cpp-peglib.cxx)
