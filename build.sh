@@ -16,10 +16,10 @@ fi
 
 # Test the project
 test() {
-echo "Running 01-validate-utf8.c ..."
-clang -I. -o 01.exe examples/01-validate-utf8.c  && ./01.exe && echo -e "\n"
-echo "Running 02-utf8-length.c ..."
-clang -I. -o 02.exe examples/02-utf8-length.c    && ./02.exe && echo -e "\n"
+echo "Running 01-calc.cxx ..."
+clang++ -std=c++17 -I. -o 01.exe examples/01-calc.cxx  && ./01.exe "1+2*3" && echo -e "\n"
+echo "Running 02-calc2.cxx ..."
+clang++ -std=c++17 -I. -o 02.exe examples/02-calc2.cxx && ./02.exe "1+2*3" && echo -e "\n"
 }
 
 
